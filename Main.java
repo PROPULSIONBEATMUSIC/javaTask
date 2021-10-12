@@ -86,7 +86,9 @@ class union{                                //8
 
 class difference {                           //5
     public static void main(String[] args) {
-    int[]a = {1,2,3,4,5,6,7,8,9,10};
+    int[]a = {1,5,7,2,5,8,1,6,5,4};
+    Arrays.sort(a);
+    System.out.println(Arrays.toString(a));
     int smallest = a[0];
     int bigger = a[a.length-1];
     int diff = bigger - smallest;
