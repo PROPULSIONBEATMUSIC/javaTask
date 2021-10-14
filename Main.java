@@ -98,3 +98,68 @@ class difference {                           //5
 
 //задача №1: создать метод findWord который принимает строку и ищет указанное в аргументе слово, findWord(text, <-это переменная String "word") если его нет, возвращает false
 //задача №2: есть список работ на которые могут взять людей с определенными навыками, создать метод который принимает разных Person'ов и основываясь на их параметрах: age, height, weigh, sanity, IQ, English level, сказать на какую работу они пойдут, к примеру: если weigh больше 100 кг, то его возьмут в су-мо, если IQ больше 120, то он станет ученым (а если IQ меньше 2, то он станет тиктокером)
+
+
+
+------------------------------------------------------------------------
+    
+    
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {                         //1
+    public static void main(String[] args) {
+        System.out.println("Введите первое число: ");
+        Scanner int1 = new Scanner(System.in);
+        int first = int1.nextInt();
+
+        System.out.println("Введите второе число: ");
+        Scanner int2 = new Scanner(System.in);
+        int second = int2.nextInt();
+
+        System.out.println("Введите третье число: ");
+        Scanner int3 = new Scanner(System.in);
+        int third = int3.nextInt();
+
+        if(first > second && first > third){
+            System.out.println("максимальное число: " + first);
+        }
+        if(second > first && second > third){
+            System.out.println("максимальное число: " + second);
+        }
+        if(third > first && third > second){
+            System.out.println("максимальное число: " + third);
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {                         //1
+    public static void main(String[] args) {
+        System.out.println("Введите слово: ");
+        Scanner wr = new Scanner(System.in);
+        String word = wr.nextLine();
+
+        char last = word.charAt(word.length()-1);
+
+        System.out.println(word + last);
+    }
+}
+
+import java.util.Scanner;
+public class Main {                         //3
+    public static void main(String[] args) {
+        System.out.println("Введите слово: ");
+        Scanner wr = new Scanner(System.in);
+        String word = wr.nextLine();
+
+
+        if(word.contains("xx")){
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
+    }
+}
+
